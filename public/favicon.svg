@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="14" fill="#1A1918"/>
+  <!-- Paper tone circle -->
+  <circle cx="32" cy="32" r="26" fill="#F5F2EB" stroke="#D5CFC2" stroke-width="2"/>
+  <!-- Expressive graphite pencil stroke -->
+  <path d="M18 42 C 24 24, 30 18, 44 20 C 38 28, 26 38, 46 44" stroke="#4A4743" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <!-- Subtle lavender graphite accent point -->
+  <circle cx="44" cy="20" r="3.5" fill="#B9A3E3"/>
+  <path d="M22 46 L 29 46" stroke="#B9A3E3" stroke-width="2" stroke-linecap="round"/>
+</svg>
