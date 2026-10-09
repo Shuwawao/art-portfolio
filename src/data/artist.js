@@ -2,15 +2,16 @@
  * JUSWA — Artist Profile & Digital Studio Information
  * Central source of truth for artist bio, tools, and social links.
  */
+import { getAssetUrl } from "../utils/assets";
 
 export const ARTIST_INFO = {
   name: "JUSWA",
   title: "Digital Artist & Character Illustrator",
   tagline: "Every stroke leaves a story.",
   workingTitle: "The Anatomy of a Stroke",
-  avatar: "/artworks/preview/juswa-zoom-2.jpg",
-  avatarThumbnail: "/artworks/thumbs/juswa-zoom-2.jpg",
-  avatarOriginal: "/artworks/juswa-zoom-2.png",
+  avatar: getAssetUrl("/artworks/preview/juswa-zoom-2.jpg"),
+  avatarThumbnail: getAssetUrl("/artworks/thumbs/juswa-zoom-2.jpg"),
+  avatarOriginal: getAssetUrl("/artworks/juswa-zoom-2.png"),
   location: "Philippines",
   primaryTool: "Krita",
   handle: "@juswa_draws",

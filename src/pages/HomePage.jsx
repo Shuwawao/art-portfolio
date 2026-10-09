@@ -7,6 +7,8 @@ import { sound } from "../utils/sound";
 import ArtworkCard from "../components/ArtworkCard";
 import ArtworkModal from "../components/ArtworkModal";
 
+import { getAssetUrl } from "../utils/assets";
+
 export default function HomePage({ onOpenSketchpad }) {
   const [selectedArtwork, setSelectedArtwork] = useState(null);
 
@@ -22,7 +24,7 @@ export default function HomePage({ onOpenSketchpad }) {
       step: "01",
       title: "The Searching Mark",
       subtitle: "Gesture & Proportional Axis",
-      image: "/artworks/preview/sketch-9.jpg",
+      image: getAssetUrl("/artworks/preview/sketch-9.jpg"),
       note: "Raw graphite lines locating anatomical landmarks. Nothing is erased here; every mistake guides the correct line.",
       badge: "Krita Pencil 2B"
     },
@@ -30,7 +32,7 @@ export default function HomePage({ onOpenSketchpad }) {
       step: "02",
       title: "Form & Chiaroscuro",
       subtitle: "Tonal Massing & Shadow Shapes",
-      image: "/artworks/preview/chainsaw-man.jpg",
+      image: getAssetUrl("/artworks/preview/chainsaw-man.jpg"),
       note: "Squinting to establish dark values. We carve light out of darkness, anchoring weight and focal hierarchy.",
       badge: "Textured Charcoal"
     },
@@ -38,7 +40,7 @@ export default function HomePage({ onOpenSketchpad }) {
       step: "03",
       title: "The Final Glaze",
       subtitle: "Atmosphere, Lost Edges & Details",
-      image: "/artworks/preview/top.jpg",
+      image: getAssetUrl("/artworks/preview/top.jpg"),
       note: "Delicate digital oil glazes, specular eye highlights, and atmospheric dust. The anatomy breathes.",
       badge: "Finished Illustration"
     }

@@ -3,8 +3,9 @@
  * Central source of truth for all digital illustrations, studies, and commissions.
  * Easy to add, modify, or reorder artwork items.
  */
+import { getAssetUrl } from "../utils/assets";
 
-export const ARTWORKS = [
+const RAW_ARTWORKS = [
   {
     id: "the-anatomy-of-a-stroke",
     slug: "the-anatomy-of-a-stroke",
@@ -320,6 +321,17 @@ export const ARTWORKS = [
     ]
   }
 ];
+
+export const ARTWORKS = RAW_ARTWORKS.map((art) => ({
+  ...art,
+  image: getAssetUrl(art.image),
+  thumbnail: getAssetUrl(art.thumbnail),
+  fullResolution: getAssetUrl(art.fullResolution),
+  processImages: (art.processImages || []).map((p) => ({
+    ...p,
+    image: getAssetUrl(p.image)
+  }))
+}));
 
 export const GALLERY_CATEGORIES = [
   "All Works",
